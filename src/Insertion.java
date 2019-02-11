@@ -23,9 +23,16 @@ public class Insertion {
 	 * @return
 	 */
 	public int[] sort(int[] input) {
+		// Declaring integers to tmp hold values
+		int leftKey = 0;
+		int rightKey = 0;
+
 		// Initialize the array to the one supplied by user
 		this.arr = input;
-		return null; // Hard coded!!
+		for (int i = 0; i < this.arr.length; i++) {
+
+		}
+		return this.arr;
 	} // End of the 'sort' method
 
 	/**
@@ -36,9 +43,7 @@ public class Insertion {
 	 * @return
 	 */
 	private boolean needSwap(int left, int right) {
-
 		return (left >= right);
-
 	} // End of the 'needSwap' method
 
 } // End of the 'Insertion' class
