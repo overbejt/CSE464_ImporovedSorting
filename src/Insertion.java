@@ -9,6 +9,8 @@
  */
 public class Insertion {
 
+	private int[] arr;
+
 	// Constructor
 	public Insertion() {
 
@@ -21,9 +23,9 @@ public class Insertion {
 	 * @return
 	 */
 	public int[] sort(int[] input) {
-
+		// Initialize the array to the one supplied by user
+		this.arr = input;
 		return null; // Hard coded!!
-
 	} // End of the 'sort' method
 
 	/**
