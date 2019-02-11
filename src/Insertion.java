@@ -20,18 +20,27 @@ public class Insertion {
 	 * External invocation method to perform insertion sort.
 	 * 
 	 * @param input
-	 * @return
+	 *            - Takes in an integer array.
+	 * @return - Returns the integer array.
 	 */
 	public int[] sort(int[] input) {
 		// Declaring integers to tmp hold values
 		int leftKey = 0;
 		int rightKey = 0;
 
-		// Initialize the array to the one supplied by user
+		// Initialize the array to the one supplied by user or this
+		// class
 		this.arr = input;
-		for (int i = 0; i < this.arr.length; i++) {
 
+		for (int i = 0; i < arr.length; i++) {
+
+			if (i >= 1) {
+				if (needSwap(arr[i - 1], arr[i])) {
+					swap(i);
+				}
+			}
 		}
+
 		return this.arr;
 	} // End of the 'sort' method
 
@@ -39,11 +48,25 @@ public class Insertion {
 	 * Method that will check if a swap is needed.
 	 * 
 	 * @param left
+	 *            - The left side value.
 	 * @param right
-	 * @return
+	 *            - The right side value.
+	 * @return - returns true if the value on the right needs to be
+	 *         swapped to be before the left value.
 	 */
 	private boolean needSwap(int left, int right) {
 		return (left >= right);
 	} // End of the 'needSwap' method
+
+	/**
+	 * This is the method that will handle the swapping of values. It
+	 * takes the current index, and rotates it to the left.
+	 * 
+	 * @param index
+	 *            - The current index of where to swap at.
+	 */
+	private void swap(int index) {
+
+	} // End of the 'swap' method
 
 } // End of the 'Insertion' class
