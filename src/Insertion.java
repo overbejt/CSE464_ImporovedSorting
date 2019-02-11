@@ -34,9 +34,9 @@ public class Insertion {
 
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr.length; j++) {
-				if (i >= 1) {
-					if (needSwap(arr[i - 1], arr[i])) {
-						swap(i);
+				if (j >= 1) {
+					if (needSwap(arr[j - 1], arr[j])) {
+						swap(j);
 					}
 				}
 			}
