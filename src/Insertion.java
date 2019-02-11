@@ -33,10 +33,11 @@ public class Insertion {
 		this.arr = input;
 
 		for (int i = 0; i < arr.length; i++) {
-
-			if (i >= 1) {
-				if (needSwap(arr[i - 1], arr[i])) {
-					swap(i);
+			for (int j = 0; j < arr.length; j++) {
+				if (i >= 1) {
+					if (needSwap(arr[i - 1], arr[i])) {
+						swap(i);
+					}
 				}
 			}
 		}
@@ -66,6 +67,12 @@ public class Insertion {
 	 *            - The current index of where to swap at.
 	 */
 	private void swap(int index) {
+
+		if (index >= 1) {
+			int tmp = arr[index - 1];
+			arr[index - 1] = arr[index];
+			arr[index] = tmp;
+		}
 
 	} // End of the 'swap' method
 
