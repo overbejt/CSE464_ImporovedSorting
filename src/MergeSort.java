@@ -5,7 +5,7 @@
  * the merge sort. This class file will create the object necessary to
  * perform a merge sort.
  * 
- * @author joshoverbeck
+ * @author Josh Overbeck
  */
 public class MergeSort {
 
@@ -17,6 +17,12 @@ public class MergeSort {
 
 	} // End of the 'Constructor'
 
+	/**
+	 * This is the method that will implemtn the merge sort.
+	 * 
+	 * @param original
+	 *            - All it takes is the original array.
+	 */
 	public void mergeSort(int[] original) {
 
 		int size = original.length;
@@ -82,6 +88,16 @@ public class MergeSort {
 		return original;
 	} // End of the 'swap' method
 
+	/**
+	 * This is the method that will merge it all back together.
+	 * 
+	 * @param original
+	 *            - The original array.
+	 * @param left
+	 *            - The left array.
+	 * @param right
+	 *            - The right array.
+	 */
 	private void merge(int[] original, int[] left, int[] right) {
 
 		int lIndex = 0;
