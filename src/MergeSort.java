@@ -24,7 +24,7 @@ public class MergeSort {
 			return;
 		} else if (size == 2) {
 			if (needSwap(original[0], original[1])) {
-				swap(original, original[0]);
+				swap(original, 1);
 			}
 			return;
 		} else {
