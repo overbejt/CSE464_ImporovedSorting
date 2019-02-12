@@ -24,10 +24,6 @@ public class Insertion {
 	 * @return - Returns the integer array.
 	 */
 	public int[] sort(int[] input) {
-		// Declaring integers to tmp hold values
-		int leftKey = 0;
-		int rightKey = 0;
-
 		// Initialize the array to the one supplied by user or this
 		// class
 		this.arr = input;
@@ -41,7 +37,7 @@ public class Insertion {
 				}
 			}
 		}
-
+		// Pass the array back
 		return this.arr;
 	} // End of the 'sort' method
 
