@@ -17,16 +17,16 @@ public class MergeSort {
 
 	} // End of the 'Constructor'
 
-	public int[] mergeSort(int[] original) {
+	public  mergeSort(int[] original) {
 
 		int size = original.length;
 		if (size == 1) {
-			return original;
+			return ;
 		} else if (size == 2) {
 			if (needSwap(original[0], original[1])) {
 				swap(original, original[0]);
 			}
-			return original;
+			return ;
 		} else {
 			int middle = size / 2;
 			int[] left = new int[middle];
@@ -37,10 +37,12 @@ public class MergeSort {
 			}
 
 			for (int r = middle; r < size; r++) {
-
+				right[r] = original[r];
 			}
-		}
 
+			mergeSort(left);
+			mergeSort(right);
+		}
 	} // End of the 'mergeSort' method
 
 	/**
