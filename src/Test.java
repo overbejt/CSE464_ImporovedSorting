@@ -78,58 +78,58 @@ public class Test {
 		System.out.println("After I: ");
 		printArr(i);
 
-		System.out.println(
-				"//////////////// Merge Sort \\\\\\\\\\\\\\\\\\\\n");
-		System.out.println("Before A: ");
-		printArr(a);
-		a = merge.sort(a);
-		System.out.println("After A: ");
-		printArr(a);
-		System.out.println("Before B: ");
-		printArr(b);
-		b = merge.sort(b);
-		System.out.println("After B: ");
-		printArr(b);
-		System.out.println("Before C: ");
-		printArr(c);
-		c = merge.sort(c);
-		System.out.println("After C: ");
-		printArr(c);
-		System.out.println("Before D: ");
-		printArr(d);
-		d = merge.sort(d);
-		System.out.println("After D: ");
-		printArr(d);
-
-		System.out.println("Before E: ");
-		printArr(e);
-		e = merge.sort(e);
-		System.out.println("After E: ");
-		printArr(e);
-
-		System.out.println("Before F: ");
-		printArr(f);
-		f = merge.sort(f);
-		System.out.println("After F: ");
-		printArr(f);
-
-		System.out.println("Before G: ");
-		printArr(g);
-		g = merge.sort(g);
-		System.out.println("After G: ");
-		printArr(g);
-
-		System.out.println("Before H: ");
-		printArr(h);
-		h = merge.sort(h);
-		System.out.println("After H: ");
-		printArr(h);
-
-		System.out.println("Before I: ");
-		printArr(i);
-		i = merge.sort(i);
-		System.out.println("After I: ");
-		printArr(i);
+		// System.out.println(
+		// "//////////////// Merge Sort \\\\\\\\\\\\\\\\\\\\n");
+		// System.out.println("Before A: ");
+		// printArr(a);
+		// merge.mergeSort(a, a.length);
+		// System.out.println("After A: ");
+		// printArr(a);
+		// System.out.println("Before B: ");
+		// printArr(b);
+		// merge.mergeSort(b, b.length);
+		// System.out.println("After B: ");
+		// printArr(b);
+		// System.out.println("Before C: ");
+		// printArr(c);
+		// merge.mergeSort(c, c.length);
+		// System.out.println("After C: ");
+		// printArr(c);
+		// System.out.println("Before D: ");
+		// printArr(d);
+		// merge.mergeSort(d, d.length);
+		// System.out.println("After D: ");
+		// printArr(d);
+		//
+		// System.out.println("Before E: ");
+		// printArr(e);
+		// merge.mergeSort(e, e.length);
+		// System.out.println("After E: ");
+		// printArr(e);
+		//
+		// System.out.println("Before F: ");
+		// printArr(f);
+		// merge.mergeSort(f, f.length);
+		// System.out.println("After F: ");
+		// printArr(f);
+		//
+		// System.out.println("Before G: ");
+		// printArr(g);
+		// merge.mergeSort(g, g.length);
+		// System.out.println("After G: ");
+		// printArr(g);
+		//
+		// System.out.println("Before H: ");
+		// printArr(h);
+		// merge.mergeSort(h, h.length);
+		// System.out.println("After H: ");
+		// printArr(h);
+		//
+		// System.out.println("Before I: ");
+		// printArr(i);
+		// merge.mergeSort(i, i.length);
+		// System.out.println("After I: ");
+		// printArr(i);
 	}
 
 	public static void printArr(int[] in) {

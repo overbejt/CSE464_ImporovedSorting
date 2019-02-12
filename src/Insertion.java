@@ -9,8 +9,6 @@
  */
 public class Insertion {
 
-	private int[] arr;
-
 	// Constructor
 	public Insertion() {
 
@@ -24,21 +22,17 @@ public class Insertion {
 	 * @return - Returns the integer array.
 	 */
 	public int[] sort(int[] input) {
-		// Initialize the array to the one supplied by user or this
-		// class
-		this.arr = input;
-
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr.length; j++) {
+		for (int i = 0; i < input.length; i++) {
+			for (int j = 0; j < input.length; j++) {
 				if (j >= 1) {
-					if (needSwap(arr[j - 1], arr[j])) {
-						swap(j);
+					if (needSwap(input[j - 1], input[j])) {
+						swap(input, j);
 					}
 				}
 			}
 		}
 		// Pass the array back
-		return this.arr;
+		return input;
 	} // End of the 'sort' method
 
 	/**
@@ -59,17 +53,20 @@ public class Insertion {
 	 * This is the method that will handle the swapping of values. It
 	 * takes the current index, and rotates it to the left.
 	 * 
+	 * @param original
+	 *            - The array that is being worked on.
 	 * @param index
 	 *            - The current index of where to swap at.
+	 * @return - Sends the array back
 	 */
-	private void swap(int index) {
+	private int[] swap(int[] original, int index) {
 
 		if (index >= 1) {
-			int tmp = arr[index - 1];
-			arr[index - 1] = arr[index];
-			arr[index] = tmp;
+			int tmp = original[index - 1];
+			original[index - 1] = original[index];
+			original[index] = tmp;
 		}
-
+		return original;
 	} // End of the 'swap' method
 
 } // End of the 'Insertion' class
