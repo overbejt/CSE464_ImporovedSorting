@@ -37,11 +37,13 @@ public class MergeSort {
 			}
 
 			for (int r = 0; r + middle < size; r++) {
-				right[r] = original[r];
+				right[r] = original[r + middle];
 			}
 
 			mergeSort(left);
 			mergeSort(right);
+
+			merge(original, left, right);
 
 		}
 	} // End of the 'mergeSort' method
@@ -88,22 +90,22 @@ public class MergeSort {
 		for (int i = 0; i < original.length; i++) {
 			if ((lIndex < left.length) && (rIndex < right.length)) {
 				if (needSwap(left[lIndex], right[rIndex])) {
-					original[i] = left[lIndex];
-					lIndex++;
-				} else {
 					original[i] = right[rIndex];
 					rIndex++;
+				} else {
+					original[i] = left[lIndex];
+					lIndex++;
 				}
 			}
 
 			// If left is empty
-			if (lIndex == left.length) {
+			else if (lIndex == left.length) {
 				original[i] = right[rIndex];
 				rIndex++;
 			}
 
 			// If right is empty
-			if (rIndex == right.length) {
+			else if (rIndex == right.length) {
 				original[i] = left[lIndex];
 				lIndex++;
 			}
