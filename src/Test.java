@@ -10,6 +10,12 @@ public class Test {
 				1, 2 };
 		int[] d = {
 				5, 4, 3, 2, 1 };
+		int[] e = {
+				1, 1, 2, 3, 4, 5 };
+		int[] f = {
+				1, 2, 3, 3, 4, 5 };
+		int[] g = {
+				1, 2, 3, 4, 5, 5 };
 
 		Insertion incert = new Insertion();
 
@@ -33,6 +39,21 @@ public class Test {
 		d = incert.sort(d);
 		System.out.println("After: ");
 		printArr(d);
+
+		printArr(e);
+		d = incert.sort(e);
+		System.out.println("After: ");
+		printArr(e);
+
+		printArr(f);
+		d = incert.sort(f);
+		System.out.println("After: ");
+		printArr(f);
+
+		printArr(g);
+		d = incert.sort(g);
+		System.out.println("After: ");
+		printArr(g);
 	}
 
 	public static void printArr(int[] in) {
