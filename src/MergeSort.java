@@ -84,7 +84,12 @@ public class MergeSort {
 
 		int lIndex = 0;
 		int rIndex = 0;
-		int oIndex = 0;
+
+		for (int i = 0; i < original.length; i++) {
+			if ((lIndex < left.length) && (rIndex < right.length)) {
+
+			}
+		}
 
 	} // End of the 'merge' method
 
