@@ -36,7 +36,7 @@ public class MergeSort {
 				left[l] = original[l];
 			}
 
-			for (int r = middle; r < size; r++) {
+			for (int r = 0; r + middle < size; r++) {
 				right[r] = original[r];
 			}
 
