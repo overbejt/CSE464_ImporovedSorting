@@ -17,16 +17,16 @@ public class MergeSort {
 
 	} // End of the 'Constructor'
 
-	public  mergeSort(int[] original) {
+	public void mergeSort(int[] original) {
 
 		int size = original.length;
 		if (size == 1) {
-			return ;
+			return;
 		} else if (size == 2) {
 			if (needSwap(original[0], original[1])) {
 				swap(original, original[0]);
 			}
-			return ;
+			return;
 		} else {
 			int middle = size / 2;
 			int[] left = new int[middle];
@@ -42,6 +42,7 @@ public class MergeSort {
 
 			mergeSort(left);
 			mergeSort(right);
+
 		}
 	} // End of the 'mergeSort' method
 
@@ -78,5 +79,13 @@ public class MergeSort {
 		}
 		return original;
 	} // End of the 'swap' method
+
+	private void merge(int[] original, int[] left, int[] right) {
+
+		int lIndex = 0;
+		int rIndex = 0;
+		int oIndex = 0;
+
+	} // End of the 'merge' method
 
 } // End of the 'MergeSort' class
